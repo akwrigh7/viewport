@@ -144,13 +144,11 @@ footer .icon{
 /* ----- HANDLE PREFERS REDUCED MOTION FOR THE ICON ANIMATIONS ----- */
 /* --------------- BEGIN USER PREFERS REDUCED MOTION QUERY --------------- */
 @media (prefers-reduced-motion) {
-    .icon {
-        @-webkit-keyframes icon-animation {
-            0% { font-variation-settings: "TIME" 1; }
-        }
-        @keyframes icon-animation {
-            0% { font-variation-settings: "TIME" 1; }
-        }
+    @-webkit-keyframes icon-animation {
+        0% { font-variation-settings: "TIME" 1; }
+    }
+    @keyframes icon-animation {
+        0% { font-variation-settings: "TIME" 1; }
     }
 }
 /* --------------- END USER PREFERS REDUCED MOTION QUERY --------------- */
@@ -205,9 +203,7 @@ img{
 
 
 /* ---------- SMALL SCREEN STYLES ---------- */
-@media only screen and (min-width: 550px) {
-
-
+@media only screen and (min-width: 620px) {
 /* --------------- BEGIN SMALL SCREEN SIZES --------------- */
     header, footer{
         background-color: var(--lime-green);
@@ -273,7 +269,7 @@ img{
 
 
 /* ---------- LARGE SCREEN STYLES ---------- */
-@media only screen and (min-width: 1050px) {
+@media only screen and (min-width: 1100px) {
 /* --------------- BEGIN LARGE SCREEN SIZES --------------- */
     header, footer{
         background-color: var(--lime-green);
@@ -312,17 +308,18 @@ img{
 
 
 /* ---------- ADJUSTING RESPONSIVE IMAGE SIZE ---------- */
+@media only screen and (min-width: 1380px) {
 /* --------------- BEGIN RESPONSIVE IMAGE ADJUST SIZES --------------- */
-    /* img{
+    img{
         width: 300px;
         max-width: 300px;
-    } */
+    }
 /* --------------- END RESPONSIVE IMAGE ADJUST SIZES --------------- */
-
+}
 
 
 /* ---------- EXTRA LARGE SCREEN STYLES ---------- */
-@media only screen and (min-width: 1280px) {
+@media only screen and (min-width: 1380px) {
 /* --------------- BEGIN EXTRA LARGE SCREEN SIZES --------------- */
     header, footer{
         background-color: var(--orange);
